@@ -19,7 +19,9 @@
 	<context:component-scan base-package="com.study.dawn.controller" />
 
  	<mvc:annotation-driven />  
-	<mvc:resources location="/" mapping="/**/*.html"/>
+	<!-- <mvc:resources location="/" mapping="*.html"/> -->
+	
+	<mvc:default-servlet-handler/>
 	
 	<!-- 视图解析器 -->
 	<bean id="viewResolver"
